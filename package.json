@@ -2,7 +2,7 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "issue blog",
-  "author": "丰硕 <fengshuochn@126.com>",
+  "author": "ForeverSc <fengshuochn@126.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -11,6 +11,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "graphql-request": "^1.4.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
