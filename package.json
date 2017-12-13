@@ -11,8 +11,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "graphql-request": "^1.4.0",
+    "apollo-client": "^2.0.4",
     "vue": "^2.5.2",
+    "vue-apollo": "^3.0.0-alpha.2",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
