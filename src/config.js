@@ -1,3 +1,3 @@
 export default {
-  readOnlyToken: 'cd8f74e1bc67250fe7596128f78107cc386c0768'
+  readOnlyToken: '0e3da474a58fc1d84c27d19527aa7e7200a57bea'
 }
