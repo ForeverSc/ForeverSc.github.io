@@ -27,7 +27,7 @@ export default {
       login: '',
       url: '',
       showAvatar: false,
-      isLoading: true
+      isLoading: false
     }
   },
   created () {
@@ -35,6 +35,7 @@ export default {
   },
   methods: {
     query () {
+      this.isLoading = true
       request(`{
         viewer {
           avatarUrl,
@@ -42,6 +43,7 @@ export default {
           url
         }
       }`).then(res => {
+        this.isLoading = false
         if (res && res.viewer) {
           const { avatarUrl, login, url } = res.viewer || {}
 
