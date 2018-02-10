@@ -10,5 +10,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
+html, body, #app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
 </style>
