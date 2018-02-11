@@ -6,7 +6,7 @@
         :src="avatarUrl"
         @load="handleAvatarLoad">
     </a>
-    <p class="login">{{ login }}</p>
+    <router-link to="/posts" class="login">{{ login }}</router-link>
     <loading :show="isLoading"></loading>
   </div>
 </template>
@@ -49,6 +49,7 @@ export default {
           this.avatarUrl = avatarUrl
           this.login = login
           this.url = url
+          localStorage.setItem('login', login)
         }
       })
     },
@@ -76,9 +77,9 @@ export default {
     animation: fadeInDown .9s ease-in-out;
   }
   .login {
+    margin: 4rem;
     animation: fadeInUp .9s ease-in-out;
     &:hover {
-      cursor: pointer;
       &::before {
         padding-right: 2px;
         content: '{'

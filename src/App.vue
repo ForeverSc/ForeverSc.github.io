@@ -11,6 +11,8 @@ export default {
 </script>
 
 <style lang="less">
+@import './assets/less/reset.less';
+
 html {
   font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif;
   font-size: 1vw;
