@@ -7,7 +7,6 @@
         @load="handleAvatarLoad">
     </a>
     <p class="login">{{ login }}</p>
-    <p>in construction ...</p>
     <loading :show="isLoading"></loading>
   </div>
 </template>
@@ -61,17 +60,34 @@ export default {
 </script>
 
 <style lang="less">
+@import '../assets/less/animate.less';
+
 .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   .avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    animation: fadeInDown .9s ease-in-out;
+  }
+  .login {
+    animation: fadeInUp .9s ease-in-out;
+    &:hover {
+      cursor: pointer;
+      &::before {
+        padding-right: 2px;
+        content: '{'
+      }
+      &::after {
+        padding-left: 2px;
+        content: '}'
+      }
+    }
   }
 }
 </style>

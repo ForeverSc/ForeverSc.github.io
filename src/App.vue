@@ -11,10 +11,12 @@ export default {
 </script>
 
 <style lang="less">
-html, body, #app {
-  position: relative;
-  width: 100%;
-  height: 100%;
+html {
+  font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif;
+  font-size: 1vw;
+}
+body {
+  font-size: 1.5vw;
   margin: 0;
 }
 </style>
