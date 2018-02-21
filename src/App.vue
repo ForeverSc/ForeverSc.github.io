@@ -15,10 +15,9 @@ export default {
 
 html {
   font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", sans-serif;
-  font-size: 1vw;
+  font-size: 16px;
 }
 body {
-  font-size: 1.5vw;
   margin: 0;
 }
 </style>
