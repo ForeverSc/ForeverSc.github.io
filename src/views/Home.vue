@@ -77,14 +77,18 @@ export default {
     animation: fadeInDown .9s ease-in-out;
   }
   .login {
+    display: flex;
+    align-items: center;
     margin: 4rem;
     animation: fadeInUp .9s ease-in-out;
     &:hover {
       &::before {
+        margin-top: -1px;
         padding-right: 2px;
         content: '{'
       }
       &::after {
+        margin-top: -1px;
         padding-left: 2px;
         content: '}'
       }
