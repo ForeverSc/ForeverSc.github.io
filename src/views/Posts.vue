@@ -1,10 +1,12 @@
 <template>
-  <div>
-    <ul>
-      <li
+  <div class="posts">
+    <ul class="list">
+      <li class="title"
         v-for="(post, index) in posts"
         :key="index">
-        {{ post.node.title }}
+        <router-link :to="`/posts/${post.number}`">
+        {{ post.title }}
+        </router-link>
       </li>
     </ul>
   </div>
@@ -31,23 +33,15 @@ export default {
         viewer {
           repository(name: "${login}.github.io") {
             issues(last: 10, states: OPEN) {
-              edges {
-                node {
-                  title,
-                  author {
-                    avatarUrl
-                    login
-                    resourcePath
-                    url
-                  },
-                  bodyHTML
-                }
+              nodes {
+                title,
+                number
               }
             }
           }
         }
       }`).then(res => {
-        this.posts = res.viewer.repository.issues.edges || []
+        this.posts = res.viewer.repository.issues.nodes || []
       })
     }
 
@@ -55,6 +49,14 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less">
+.posts {
+  display: flex;
+  justify-content: center;
+  .list {
+    padding: 0;
+    margin: 6rem 0;
+    font-size: 2rem;
+  }
+}
 </style>
