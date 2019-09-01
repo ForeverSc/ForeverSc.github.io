@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2a991a3a.chunk.css",
+    "main.js": "/static/js/main.bea09d89.chunk.js",
+    "main.js.map": "/static/js/main.bea09d89.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.6d3e868c.js",
+    "runtime~main.js.map": "/static/js/runtime~main.6d3e868c.js.map",
+    "static/css/2.1c7ffa40.chunk.css": "/static/css/2.1c7ffa40.chunk.css",
+    "static/js/2.acd01f7b.chunk.js": "/static/js/2.acd01f7b.chunk.js",
+    "static/js/2.acd01f7b.chunk.js.map": "/static/js/2.acd01f7b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.84de62666001208047d883ca6bfd43db.js": "/precache-manifest.84de62666001208047d883ca6bfd43db.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.1c7ffa40.chunk.css.map": "/static/css/2.1c7ffa40.chunk.css.map",
+    "static/css/main.2a991a3a.chunk.css.map": "/static/css/main.2a991a3a.chunk.css.map",
+    "static/media/wing.css": "/static/media/edelsans_regular.ab11eb2c.otf"
+  }
+}
